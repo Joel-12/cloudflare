@@ -1,5 +1,5 @@
-curl -L --output cloudflared.rpm https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-x86_64.rpm && 
+curl -L --output cloudflared.deb https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb && 
 
-sudo yum localinstall -y cloudflared.rpm && 
+sudo dpkg -i cloudflared.deb && 
 
-sudo cloudflared service install eyJhIjoiY2VlMzI4M2Q4ZDU1YzFiYmRmZWIwZmRhYWEwNDVjNDgiLCJ0IjoiODNkNjQ0ZDMtMWI0ZC00ZmZiLTgzMGItYTlkOGQwYWZiMjgwIiwicyI6IllUaGpNalExWXpndE5XVXhNQzAwTWpnNExUZzRPRGd0WVRnM1lXRTRNV0U0TkRjeCJ9
+sudo cloudflared service install eyJhIjoiY2VlMzI4M2Q4ZDU1YzFiYmRmZWIwZmRhYWEwNDVjNDgiLCJ0IjoiNDhmNGU2NjMtY2Q0Yy00ZDg3LTg4M2QtZWFlYTllYzdlZGEzIiwicyI6Ik5XWTNNMkUzTlRndE5EY3pPQzAwWTJabUxUZzNPVFV0Wm1NM01EYzVOV0ZrWmpReSJ9
